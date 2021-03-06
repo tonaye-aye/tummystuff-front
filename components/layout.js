@@ -1,16 +1,16 @@
-import Head from "next/head";
+import Head from 'next/head'
 
 // components
-import Nav from "./nav";
-import Footer from "./footer";
+import Nav from './nav'
+import Footer from './footer'
 
 // material ui
-import Container from "@material-ui/core/Container";
+import Container from '@material-ui/core/Container'
 
 const Layout = ({ children, categories }) => (
   <>
     <Head>
-      <title>Tony G. - Devtones</title>
+      <title>Tummy stuff & Lyme</title>
       <link
         rel="stylesheet"
         href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
@@ -25,6 +25,6 @@ const Layout = ({ children, categories }) => (
     <Container fixed>{children}</Container>
     <Footer />
   </>
-);
+)
 
-export default Layout;
+export default Layout
