@@ -10,7 +10,7 @@ import { getArticles, getArticle, getCategories } from '../../lib/api'
 
 // components
 import Layout from '../../components/layout'
-import Title from '../../components/title'
+//import Title from '../../components/title'
 import Sidebar from '../../components/sidebar'
 
 // material ui
@@ -26,6 +26,10 @@ import Grid from '@material-ui/core/Grid'
 import Typography from '@material-ui/core/Typography'
 
 const useStyles = makeStyles((theme) => ({
+  title: {
+    paddingTop: '2rem',
+    marginBottom: '1rem'
+  },
   cardContainer: {
     background: '#f7f7f7'
   },
@@ -54,7 +58,17 @@ const Article = ({ article, articles, categories }) => {
   return (
     <Layout categories={categories}>
       <div className="categories-articles">
-        <Title title={article.title} />
+        {/*<Title title={article.title} />*/}
+        <div className={classes.title}>
+          <Typography
+            gutterBottom
+            variant="h2"
+            component="h2"
+            className="articleTitle"
+          >
+            {title}
+          </Typography>
+        </div>
         <Grid container spacing={4}>
           <Grid item xs={12} md={9}>
             <Card elevation={0} className={classes.cardContainer}>

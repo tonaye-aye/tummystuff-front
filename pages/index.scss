@@ -50,8 +50,15 @@ main {
   justify-content: space-between;
   padding: 1rem 0 0 0;
 }
+.categoryTitle {
+  font-family: 'Rozha One', serif !important;
+  line-height: 85.2%;
+  color: #424242;
+  opacity: 0.65;
+}
 .articleTitle {
   font-family: 'Rozha One', serif !important;
+  font-size: 36px;
   line-height: 85.2%;
   color: #424242;
   opacity: 0.65;
