@@ -20,7 +20,7 @@ const title = ({ title }) => {
         gutterBottom
         variant="h2"
         component="h2"
-        className="categoryTitle"
+        className="articleTitle"
       >
         {title}
       </Typography>
