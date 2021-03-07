@@ -87,16 +87,10 @@ export default function Nav({ categories, props }) {
         <Toolbar className="toolBar">
           <div>
             <IconButton
-              href="https://amazon.com"
+              href="https://www.instagram.com/"
               className={classes.socialButton}
             >
               <InstagramIcon />
-            </IconButton>
-            <IconButton
-              href="https://google.com"
-              className={classes.socialButton}
-            >
-              <ChatIcon />
             </IconButton>
           </div>
           <div>
