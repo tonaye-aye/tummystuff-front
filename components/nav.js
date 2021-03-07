@@ -49,6 +49,7 @@ const useStyles = makeStyles((theme) => ({
 
 export default function Nav({ categories, props }) {
   const classes = useStyles()
+
   const [open, setOpen] = React.useState(false)
   const anchorRef = React.useRef(null)
 
@@ -82,18 +83,19 @@ export default function Nav({ categories, props }) {
   }, [open])
 
   return (
-    <HideOnScroll {...props}>
-      <AppBar position="fixed" color="transparent" elevation={0}>
-        <Toolbar className="toolBar">
-          <div>
-            <IconButton
-              href="https://www.instagram.com/"
-              className={classes.socialButton}
-              size="small"
-            >
-              <InstagramIcon />
-            </IconButton>
-          </div>
+    <AppBar position="fixed" elevation={0} className="nav">
+      <Toolbar className="toolBar">
+        <div>
+          <IconButton
+            href="https://www.instagram.com/"
+            className={classes.socialButton}
+            style={{ position: 'sticky' }}
+            size="small"
+          >
+            <InstagramIcon />
+          </IconButton>
+        </div>
+        <HideOnScroll {...props}>
           <div>
             <Link href="/">
               <Button className={classes.menuButton}>Home</Button>
@@ -155,8 +157,8 @@ export default function Nav({ categories, props }) {
               )}
             </Popper>
           </div>
-        </Toolbar>
-      </AppBar>
-    </HideOnScroll>
+        </HideOnScroll>
+      </Toolbar>
+    </AppBar>
   )
 }
