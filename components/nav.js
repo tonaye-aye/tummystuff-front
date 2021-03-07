@@ -89,6 +89,7 @@ export default function Nav({ categories, props }) {
             <IconButton
               href="https://www.instagram.com/"
               className={classes.socialButton}
+              size="small"
             >
               <InstagramIcon />
             </IconButton>
