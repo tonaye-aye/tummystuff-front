@@ -83,19 +83,19 @@ export default function Nav({ categories, props }) {
   }, [open])
 
   return (
-    <AppBar position="fixed" elevation={0} className="nav">
-      <Toolbar className="toolBar">
-        <div>
-          <IconButton
-            href="https://www.instagram.com/"
-            className={classes.socialButton}
-            style={{ position: 'sticky' }}
-            size="small"
-          >
-            <InstagramIcon />
-          </IconButton>
-        </div>
-        <HideOnScroll {...props}>
+    <HideOnScroll {...props}>
+      <AppBar position="fixed" elevation={0} className="nav">
+        <Toolbar className="toolBar">
+          <div>
+            <IconButton
+              href="https://www.instagram.com/"
+              className={classes.socialButton}
+              size="small"
+            >
+              <InstagramIcon />
+            </IconButton>
+          </div>
+
           <div>
             <Link href="/">
               <Button className={classes.menuButton}>Home</Button>
@@ -157,8 +157,8 @@ export default function Nav({ categories, props }) {
               )}
             </Popper>
           </div>
-        </HideOnScroll>
-      </Toolbar>
-    </AppBar>
+        </Toolbar>
+      </AppBar>
+    </HideOnScroll>
   )
 }
