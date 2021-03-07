@@ -18,8 +18,8 @@ const title = ({ title }) => {
     <div className={classes.root}>
       <Typography
         gutterBottom
-        variant="h2"
-        component="h2"
+        variant="h3"
+        component="h3"
         className="articleTitle"
       >
         {title}
