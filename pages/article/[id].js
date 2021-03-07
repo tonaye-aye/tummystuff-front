@@ -26,12 +26,6 @@ import Grid from '@material-ui/core/Grid'
 import Typography from '@material-ui/core/Typography'
 
 const useStyles = makeStyles((theme) => ({
-  root: {
-    padding: '5rem 4rem 4rem',
-    display: 'flex',
-    flexDirection: 'column',
-    justifyContent: 'center'
-  },
   cardContainer: {
     background: '#f7f7f7'
   },
@@ -59,7 +53,7 @@ const Article = ({ article, articles, categories }) => {
 
   return (
     <Layout categories={categories}>
-      <div className={classes.root}>
+      <div className="categories-articles">
         <Title title={article.title} />
         <Grid container spacing={4}>
           <Grid item xs={12} md={9}>

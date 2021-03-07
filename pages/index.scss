@@ -56,6 +56,12 @@ main {
   color: #424242;
   opacity: 0.65;
 }
+.categories-articles {
+  padding: 5rem 4rem 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 footer {
   text-align: center;
   margin: 4rem 0 2rem 0;
@@ -78,5 +84,8 @@ footer {
         padding: 0 2em 0 4rem;
       }
     }
+  }
+  .categories-articles {
+    padding: 4rem 2rem 4rem 4rem;
   }
 }
