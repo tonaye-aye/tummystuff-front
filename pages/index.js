@@ -19,7 +19,7 @@ const Home = ({ articles, categories }) => {
       <div className="container">
         <article>
           <Image
-            src="/leaf-alt.png"
+            src="/leaf.png"
             alt="Picture of the author"
             layout="fill"
             objectFit="cover"
