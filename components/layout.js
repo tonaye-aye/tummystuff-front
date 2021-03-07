@@ -42,6 +42,16 @@ const Layout = ({ children, categories }) => (
         href="https://fonts.googleapis.com/css2?family=Poppins&family=Rozha+One&display=swap"
         rel="stylesheet"
       ></link>
+
+      <meta
+        name="description"
+        content="A website about stomach pains, issues and remedies. A journey with lyme disease."
+      />
+      <meta
+        name="keywords"
+        content="LYME, LYME DISEASE, LYME AWARENESS, LYME AUSTRALIA, SIBO, STOMACH, TUMMY, FATIGUE, HEALTH, HEALTH AUSTRALIA"
+      />
+      <meta name="author" content="Tummy Stuff and Lyme" />
     </Head>
 
     <main>
