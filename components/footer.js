@@ -1,26 +1,16 @@
-import React from "react";
+import React from 'react'
 
 // material ui
-import { makeStyles } from "@material-ui/core/styles";
-import Typography from "@material-ui/core/Typography";
-
-const useStyles = makeStyles((theme) => ({
-  root: {
-    padding: "2rem",
-    textAlign: "center"
-  }
-}));
+import Typography from '@material-ui/core/Typography'
 
 const footer = () => {
-  const classes = useStyles();
-
   return (
-    <footer className={classes.root}>
+    <footer>
       <Typography variant="caption" component="p">
-        &copy; Devotnes blog - 2020
+        &copy; Tummy stuff and Lyme - 2021
       </Typography>
     </footer>
-  );
-};
+  )
+}
 
-export default footer;
+export default footer

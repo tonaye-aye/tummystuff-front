@@ -1,0 +1,82 @@
+html,
+body {
+  margin: 0;
+}
+
+main {
+  width: 100%;
+  max-width: 1440px;
+  min-height: 100vh;
+  margin: 0 auto;
+}
+.brand {
+  position: fixed;
+  left: 1.2rem;
+  bottom: 1rem;
+  transform-origin: 0 0;
+  transform: rotate(-90deg);
+  opacity: 0.25;
+}
+.container {
+  display: flex;
+  align-items: center;
+  article {
+    flex: 1;
+    img {
+      position: fixed !important;
+      z-index: -99;
+    }
+  }
+  section {
+    flex: 1;
+    min-height: 100vh;
+    .featureTitle {
+      font-family: 'Rozha One', serif;
+      font-size: 96px;
+      line-height: 85.2%;
+      margin: 7rem 0 0 0;
+      transform: translateX(-40%);
+      color: rgba(153, 132, 113, 0.8);
+      z-index: 99;
+    }
+    .featureArticles {
+      margin: 6rem 0 0 0;
+      padding: 0 3em;
+    }
+  }
+}
+.toolBar {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 0 0 0;
+}
+.articleTitle {
+  font-family: 'Rozha One', serif !important;
+  line-height: 85.2%;
+  color: #424242;
+  opacity: 0.65;
+}
+footer {
+  text-align: center;
+  margin: 4rem 0 2rem 0;
+}
+
+@media (max-width: 700px) {
+  .container {
+    article {
+      display: none;
+    }
+    section {
+      .featureTitle {
+        transform: translateX(0);
+        padding: 0 4rem;
+        font-size: 72px;
+        margin: 7rem 0 1rem 0;
+      }
+      .featureArticles {
+        margin: 4rem 0 0 0;
+        padding: 0 4em;
+      }
+    }
+  }
+}

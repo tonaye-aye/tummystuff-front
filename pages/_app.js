@@ -1,3 +1,6 @@
-const App = ({ Component, pageProps }) => <Component {...pageProps} />;
+// scss
+import './index.scss'
 
-export default App;
+const App = ({ Component, pageProps }) => <Component {...pageProps} />
+
+export default App
